@@ -8,6 +8,7 @@ Controller: Controllers are the components that handle user interaction, work wi
 
 definitions adapted from: https://docs.microsoft.com/en-in/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-website&view=aspnetcore-6.0
 
+
 1. input query (from view)
 2. process query (controller and model)
     * identify user intent (what information regarding the company do they want?: revenue, market cap, free cash flow, and so on)
@@ -15,31 +16,33 @@ definitions adapted from: https://docs.microsoft.com/en-in/aspnet/core/mvc/overv
 3. scrape and cleanse the relevant data needed (controller and model)
 4. format and display retrieved data (controller and view)
 
+
 Every query should be matched to one of the following intents:
-    - company profile
-        * one line of long business summary
-        * country
-        * industry
-    - stock price/stock price history
-        * current, open, day high & low, previous close
-        * 52-week-high & low
-    - market cap
-    - PE ratio 
-        forward, trailing PE
-    - EPS
-    - volume
-    - dividend rate
-        5 year average too, trailing annual
-    - revenue
-    - gross/operating/net margins
-    - financials (quarter or year?)
-        sales, cost of revenue, gross income, opex, operating income, net income
-    - returns/growth
-        average return, earnings growth (earnings quarterly growth?), revenue growth
-    - analyst reports
-        * 1 year target (target low price, target median price or target mean price, target high price)
-        * recommendation mean, numberOfAnalystOpinions
+- company profile
+    * one line of long business summary
+    * country
+    * industry
+- stock price/stock price history
+    * current, open, day high & low, previous close
+    * 52-week-high & low
+- market cap
+- PE ratio 
+    * forward, trailing PE
+- EPS
+- volume
+- dividend rate
+    * 5 year average too, trailing annual
+- revenue
+- gross/operating/net margins
+- financials (quarter or year?)
+    * sales, cost of revenue, gross income, opex, operating income, net income
+- returns/growth
+    * average return, earnings growth (earnings quarterly growth?), revenue growth
+- analyst reports
+    * 1 year target (target low price, target median price or target mean price, target high price)
+    recommendation mean, numberOfAnalystOpinions
 
-(output shortName, if available, before any response)
+(output company's short name, if available, before any response)
 
-write tests: https://realpython.com/python-testing/#testing-your-code
+
+Also write tests: https://realpython.com/python-testing/#testing-your-code
