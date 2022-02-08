@@ -20,11 +20,9 @@ Every query should be matched to one of the following intents:
         * one line of long business summary
         * country
         * industry
-
     - stock price/stock price history
         * current, open, day high & low, previous close
         * 52-week-high & low
-        
     - market cap
     - PE ratio 
         forward, trailing PE
@@ -32,20 +30,16 @@ Every query should be matched to one of the following intents:
     - volume
     - dividend rate
         5 year average too, trailing annual
-    
     - revenue
     - gross/operating/net margins
     - financials (quarter or year?)
         sales, cost of revenue, gross income, opex, operating income, net income
-
     - returns/growth
         average return, earnings growth (earnings quarterly growth?), revenue growth
     - analyst reports
         * 1 year target (target low price, target median price or target mean price, target high price)
         * recommendation mean, numberOfAnalystOpinions
 
-
 (output shortName, if available, before any response)
-
 
 write tests: https://realpython.com/python-testing/#testing-your-code
